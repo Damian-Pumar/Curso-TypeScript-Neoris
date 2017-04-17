@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TypeScript Greeter</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <script src="bin/main.js"></script>
+    <script src="bin/transport.js"></script>
+    <script src="bin/transportFactory.js"></script>
+
+    <label for="passengers">Cantidad de pasajeros:</label>
+
+    <input type="number" name="passengers" id="passengers" required/>
+
+    <button onclick="Main.Factory.CreateCar()">Crear Auto</button>
+
+    <button onclick="Main.Factory.CreateAircraft()">Crear Avión</button>
+
+    <br>
+    <button onclick="Main.Factory.Transport.Run()" id="run" hidden>Run</button>
+
+    <button onclick="Main.Factory.Transport.Stop()" id="stop" hidden>Stop</button>
+
+</body>
+
+</html>
